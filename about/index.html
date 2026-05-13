@@ -9,6 +9,8 @@
   <meta property="og:title"       content="Our Story | The Cozy Bean Braamfontein" />
   <meta property="og:description" content="A cozy corner in the heart of Braamfontein. Discover the story behind The Cozy Bean." />
   <meta property="og:image"       content="/assets/images/bar-interior.jpeg" />
+  <link rel="preload" as="image" href="/assets/images/logo.png" />
+  <link rel="preload" as="image" href="/assets/images/bar-interior.jpeg" fetchpriority="high" />
   <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
@@ -86,9 +88,9 @@
         <div class="container">
           <div class="story-grid">
             <div class="story-img-grid reveal">
-              <img src="/assets/images/bar-interior.jpeg"     alt="The Cozy Bean coffee bar — exposed brick wall, espresso machine and warm pendant lighting, Braamfontein" width="800" height="600" loading="lazy" class="image-reveal" />
-              <img src="/assets/images/iced-coffee.jpeg"      alt="Branded Cozy Bean iced coffee — signature drink" width="400" height="400" loading="lazy" class="image-reveal" />
-              <img src="/assets/images/tea-cups.jpeg"         alt="Two Cozy Bean tea cups on marble counter with baked goods" width="400" height="400" loading="lazy" class="image-reveal" />
+              <img src="/assets/images/bar-interior.jpeg"     alt="The Cozy Bean coffee bar — exposed brick wall, espresso machine and warm pendant lighting, Braamfontein" width="800" height="600" fetchpriority="high" class="image-reveal" />
+              <img src="/assets/images/iced-coffee.jpeg"      alt="Branded Cozy Bean iced coffee — signature drink" width="400" height="400" class="image-reveal" />
+              <img src="/assets/images/tea-cups.jpeg"         alt="Two Cozy Bean tea cups on marble counter with baked goods" width="400" height="400" class="image-reveal" />
             </div>
             <div class="reveal">
               <span class="section-label">Who We Are</span>
