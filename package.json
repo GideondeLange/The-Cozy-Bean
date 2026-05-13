@@ -1,0 +1,20 @@
+{
+  "name": "the-cozy-bean",
+  "version": "1.0.0",
+  "description": "The Cozy Bean — Coffee Shop website, Braamfontein Johannesburg",
+  "scripts": {
+    "dev":     "vite",
+    "build":   "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gsap":                    "^3.12.5",
+    "lenis":                   "^1.1.13",
+    "swup":                    "^4.6.0",
+    "@swup/preload-plugin":    "^3.2.11",
+    "@swup/body-class-plugin": "^3.3.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}
