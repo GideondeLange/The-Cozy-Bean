@@ -186,13 +186,7 @@ section      { padding: 5rem 0; }
   transition: color var(--transition);
 }
 .mobile-nav a:hover { color: var(--amber); }
-.mobile-close {
-  position: absolute;
-  top: 1.5rem; right: 1.5rem;
-  background: none; border: none;
-  color: #fff; font-size: 2rem;
-  cursor: pointer;
-}
+.mobile-close { display: none; }
 
 /* ===== Hero ===== */
 .hero {

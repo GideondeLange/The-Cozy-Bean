@@ -53,7 +53,9 @@ function closeMobile() {
   mobileNav?.classList.remove('open')
   document.body.style.overflow = ''
 }
-hamburger?.addEventListener('click', openMobile)
+hamburger?.addEventListener('click', () => {
+  hamburger.classList.contains('open') ? closeMobile() : openMobile()
+})
 mobileClose?.addEventListener('click', closeMobile)
 document.querySelectorAll('.mobile-nav a').forEach(a => a.addEventListener('click', closeMobile))
 

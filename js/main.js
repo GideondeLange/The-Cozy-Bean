@@ -28,7 +28,9 @@ function closeMobile() {
   document.body.style.overflow = '';
 }
 
-if (hamburger) hamburger.addEventListener('click', openMobile);
+if (hamburger) hamburger.addEventListener('click', () => {
+  hamburger.classList.contains('open') ? closeMobile() : openMobile();
+});
 if (mobileClose) mobileClose.addEventListener('click', closeMobile);
 document.querySelectorAll('.mobile-nav a').forEach(a => a.addEventListener('click', closeMobile));
 

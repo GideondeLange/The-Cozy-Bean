@@ -148,7 +148,7 @@ section      { padding: 5rem 0; }
 .mobile-nav.open { display: flex; }
 .mobile-nav a { color: #fff; font-family: var(--font-heading); font-size: 1.5rem; transition: color var(--transition); }
 .mobile-nav a:hover { color: var(--amber); }
-.mobile-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer; }
+.mobile-close { display: none; }
 
 /* Social icons inside mobile nav */
 .mobile-social-icons {
