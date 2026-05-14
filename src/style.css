@@ -131,13 +131,25 @@ section      { padding: 5rem 0; }
 .social-nav-icons svg { width: 17px; height: 17px; fill: currentColor; }
 
 .hamburger {
-  display: none; flex-direction: column; gap: 5px;
-  cursor: pointer; padding: 0.5rem; background: none; border: none;
+  display: none; align-items: center; justify-content: center;
+  cursor: pointer; background: none; border: none;
+  width: 36px; height: 36px; position: relative; padding: 0;
 }
-.hamburger span { display: block; width: 24px; height: 2px; background: #fff; transition: all var(--transition); transform-origin: center; }
-.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.hamburger span {
+  display: block; position: absolute;
+  left: 50%; top: 50%;
+  width: 22px; height: 2px;
+  background: #fff; border-radius: 2px;
+  margin-left: -11px; margin-top: -1px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+.hamburger span:nth-child(1) { transform: translateY(-7px); }
+.hamburger span:nth-child(2) { transform: translateY(0); }
+.hamburger span:nth-child(3) { transform: translateY(7px); }
+.hamburger.open span:nth-child(1) { transform: translateY(0) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(0) rotate(-45deg); }
 
 /* ===== Mobile Nav (outside #swup) ===== */
 .mobile-nav {
